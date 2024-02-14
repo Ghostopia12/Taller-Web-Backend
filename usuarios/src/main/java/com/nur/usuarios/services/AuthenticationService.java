@@ -20,7 +20,6 @@ public class AuthenticationService {
     private final AuthenticationManager authenticationManager;
 
     public User register(User request) {
-        request.setRole(Role.RESIDENTE);
         request.setPassword(passwordEncoder.encode(request.getPassword()));
         return userRepository.save(request);
     }
