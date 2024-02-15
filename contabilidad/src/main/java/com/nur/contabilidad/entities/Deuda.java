@@ -1,7 +1,7 @@
 package com.nur.contabilidad.entities;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.nur.contabilidad.enums.ETipoPago;
+import com.nur.contabilidad.enums.ETipoDeuda;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
@@ -14,9 +14,9 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name = "pagos")
+@Table(name = "deudas")
 @EntityListeners(AuditingEntityListener.class)
-public class Pago {
+public class Deuda {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -37,14 +37,8 @@ public class Pago {
 //    @LastModifiedBy
 //    private Long updatedBy;
 
-    @JsonProperty("deuda_id")
-    private Integer deuda_id;
-
-    @JsonProperty("usuario_id")
-    private Integer usuario_id;
-
-    @JsonProperty("contable_id")
-    private Integer contable_id;
+    @JsonProperty("residencia_id")
+    private Integer residencia_id;
 
     @JsonProperty("fecha")
     private Date fecha;
@@ -52,7 +46,16 @@ public class Pago {
     @JsonProperty("monto")
     private Long monto;
 
+    @JsonProperty("concepto")
+    private String concepto;
+
+    @JsonProperty("cancelada")
+    private Boolean cancelada;
+
+    @JsonProperty("fecha_limite")
+    private Date fechaLimite;
+
     @JsonProperty("tipo")
     @Enumerated(EnumType.STRING)
-    private ETipoPago tipo;
+    private ETipoDeuda tipo;
 }
