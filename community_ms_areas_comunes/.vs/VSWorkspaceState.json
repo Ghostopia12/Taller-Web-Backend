@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Domain",
+    "\\Domain\\Model",
+    "\\Domain\\Model\\AreasComunes",
+    "\\Infrastructure",
+    "\\Infrastructure\\EntityFramework",
+    "\\Infrastructure\\EntityFramework\\Repository",
+    "\\Infrastructure\\EntityFramework\\Repository\\AreasComunes",
+    "\\Web",
+    "\\Web\\Controllers"
+  ],
+  "SelectedNode": "\\Web\\Controllers\\AreaComunController.cs",
+  "PreviewInSolutionExplorer": false
+}
