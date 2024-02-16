@@ -1,0 +1,7 @@
+from .simple_serializers import CondominioSimpleSerializer, TipoCondominioSimpleSerializer, TipoDivisionSimpleSerializer, DivisionBloqueSimpleSerializer, PisoSimpleSerializer
+
+
+from .condominio_viewset import CondominioViewSet, CondominioSerializer
+from .tipo_condominio_viewset import TipoCondominioViewSet, TipoCondominioSerializer
+from .tipo_division_viewset import TipoDivisionViewSet, TipoDivisionSerializer
+from .division_bloque_viewset import DivisionBloqueViewSet, DivisionBloqueSerializer
