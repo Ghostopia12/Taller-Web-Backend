@@ -4,10 +4,10 @@ import com.nur.usuarios.entities.User;
 import com.nur.usuarios.services.implementations.UserServiceImpl;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.data.domain.Page;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.Map;
 
@@ -17,6 +17,8 @@ import java.util.Map;
 
 public class UserController {
     private PasswordEncoder passwordEncoder;
+    private RestTemplate restTemplate;
+
 
     private final UserServiceImpl userService;
 
@@ -28,7 +30,14 @@ public class UserController {
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<User> saveUser(@RequestBody User user){
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        return ResponseEntity.status(HttpStatus.CREATED).body(userService.save(user));
+        User savedUser = userService.save(user);
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        HttpEntity<User> requestEntity = new HttpEntity<>(savedUser, headers);
+        String otherBackendUrl = "http://localhost:7777/api/users-rol/";
+        ResponseEntity<String> response = restTemplate.postForEntity(otherBackendUrl, requestEntity, String.class);
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(savedUser);
     }
 
     @GetMapping("/all")
