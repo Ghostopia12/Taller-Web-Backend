@@ -17,6 +17,20 @@ class Users_rolViewSet(viewsets.ModelViewSet):
     queryset = Users_rol.objects.all()
     serializer_class = Users_rolSerializer
 
+    def create(self, request, *args, **kwargs):
+        for rol in request.data['roles']:
+            data = {
+                "user_id": request.data['user_id'],
+                "rol_id": rol
+            }
+            serializer = Users_rolSerializer(data=data)
+            serializer.is_valid(raise_exception=True)
+            serializer.save()
+        return Response({
+            "detalle": "Se guardo correctamente.",
+            "status_code": 201
+        }, status=status.HTTP_201_CREATED)
+
     @action(detail=True, methods=['get'], url_path="roles-usuario",
             name="Lista de roles por usuario")
     def roles_x_usuario(self, request, pk=None):
