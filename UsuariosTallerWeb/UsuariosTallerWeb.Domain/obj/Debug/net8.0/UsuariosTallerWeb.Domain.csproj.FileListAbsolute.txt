@@ -1,0 +1,12 @@
+C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\bin\Debug\net8.0\UsuariosTallerWeb.Domain.deps.json
+C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\bin\Debug\net8.0\UsuariosTallerWeb.Domain.dll
+C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\bin\Debug\net8.0\UsuariosTallerWeb.Domain.pdb
+C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.AssemblyInfoInputs.cache
+C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.AssemblyInfo.cs
+C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.sourcelink.json
+C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.dll
+C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\refint\UsuariosTallerWeb.Domain.dll
+C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.pdb
+C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\ref\UsuariosTallerWeb.Domain.dll
