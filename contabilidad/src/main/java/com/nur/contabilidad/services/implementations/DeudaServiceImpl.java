@@ -43,6 +43,10 @@ public class DeudaServiceImpl implements IDeudaService {
         return pagoRepository.findByMonto(monto);
     }
 
+    public Optional<Deuda> findByResidencia_id(Integer residencia_id){
+        return pagoRepository.findByResidencia_id(residencia_id);
+    }
+
     @Override
     public Deuda save(Deuda pago) {
         return pagoRepository.save(pago);

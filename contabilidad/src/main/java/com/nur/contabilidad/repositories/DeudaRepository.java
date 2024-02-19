@@ -16,5 +16,6 @@ public interface DeudaRepository extends JpaRepository<Deuda, Long> {
     Optional<Deuda> findByMonto(Long monto);
 
 
+    Optional<Deuda> findByResidencia_id(Integer residencia_id);
 
 }

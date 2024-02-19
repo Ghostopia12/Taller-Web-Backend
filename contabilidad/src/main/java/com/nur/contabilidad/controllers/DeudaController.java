@@ -6,11 +6,13 @@ import com.nur.contabilidad.services.implementations.DeudaServiceImpl;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/deudas")
@@ -25,7 +27,11 @@ public class DeudaController {
     public ResponseEntity<Map<String, Object>> findAll(
             @RequestParam(required = false, defaultValue = "1") Integer page,
             @RequestParam(required = false, defaultValue = "10") Integer size,
-            @RequestParam(required = false, defaultValue = "true") Boolean enabled){
+            @RequestParam(required = false, defaultValue = "true") Boolean enabled,
+            @RequestParam("role") int role){
+        if (role != 0 && role != 1) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+        }
         Page<Deuda> deudas = deudaService.findAll(page, size, enabled);
         Map<String, Object> response = Map.of(
                 "deudas", deudas.getContent(),
@@ -38,7 +44,10 @@ public class DeudaController {
 
 
     @GetMapping("/{id}")
-    public ResponseEntity<Deuda> findById(@PathVariable Long id){
+    public ResponseEntity<Deuda> findById(@PathVariable Long id, @RequestParam("role") int role){
+        if (role == 3 || role == 4) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+        }
         Deuda deuda = deudaService.findById(id);
         if (deuda == null){
             return ResponseEntity.notFound().build();
@@ -47,7 +56,11 @@ public class DeudaController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<Deuda> save(@RequestBody Deuda deuda){
+    public ResponseEntity<Deuda> save(@RequestBody Deuda deuda, @RequestParam("role") int role){
+        if (role != 0 && role != 1) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+        }
+
         Deuda deudaCreated = deudaService.save(deuda);
         if (deudaCreated == null){
             return ResponseEntity.badRequest().build();
@@ -55,5 +68,17 @@ public class DeudaController {
         return ResponseEntity.ok(deudaCreated);
     }
 
+
+    @GetMapping("/residencia/{residencia_id}")
+    public ResponseEntity<Deuda> findByResidencia_id(@PathVariable Integer residencia_id, @RequestParam("role") int role){
+        if (role == 3 || role == 4) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+        }
+        Optional<Deuda> deuda = deudaService.findByResidencia_id(residencia_id);
+        if (deuda.isEmpty()){
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(deuda.get());
+    }
 
 }
