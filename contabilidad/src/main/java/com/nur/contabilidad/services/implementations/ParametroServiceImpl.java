@@ -43,6 +43,14 @@ public class ParametroServiceImpl implements IParametroService {
         return pagoRepository.findByMonto(monto);
     }
 
+    public Optional<Parametro> findByActivo(Boolean activo){
+        return pagoRepository.findByActivo(activo);
+    }
+
+    public Optional<Parametro> findByTipo(Integer tipo){
+        return pagoRepository.findByTipo(tipo);
+    }
+
     @Override
     public Parametro save(Parametro pago) {
         return pagoRepository.save(pago);

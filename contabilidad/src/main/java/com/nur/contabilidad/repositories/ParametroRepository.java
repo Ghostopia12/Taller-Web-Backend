@@ -15,6 +15,8 @@ public interface ParametroRepository extends JpaRepository<Parametro, Long> {
     @Query("SELECT p FROM Parametro p WHERE p.monto = ?1")
     Optional<Parametro> findByMonto(Long monto);
 
+    Optional<Parametro> findByActivo(Boolean activo);
 
+    Optional<Parametro> findByTipo(Integer tipo);
 
 }

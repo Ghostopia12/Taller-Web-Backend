@@ -43,6 +43,18 @@ public class PagoServiceImpl implements IPagoService {
         return pagoRepository.findByMonto(monto);
     }
 
+    public Optional<Pago> findByDeuda_id(Integer deuda_id){
+        return pagoRepository.findByDeuda_id(deuda_id);
+    }
+
+    public Optional<Pago> findByUsuario_id(Integer usuario_id){
+        return pagoRepository.findByUsuario_id(usuario_id);
+    }
+
+    public Optional<Pago> findByContable_id(Integer contable_id){
+        return pagoRepository.findByContable_id(contable_id);
+    }
+
     @Override
     public Pago save(Pago pago) {
         return pagoRepository.save(pago);
