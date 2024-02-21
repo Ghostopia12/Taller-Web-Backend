@@ -63,6 +63,25 @@ class Users_rolViewSet(viewsets.ModelViewSet):
             }, status=status.HTTP_404_NOT_FOUND)
 
 
+    @action(detail=False, methods=['post'], url_path="actualizar-roles",
+            name="Actualizar los roles de un usuario")
+    def user_all(self, request, pk=None):
+        registros_a_eliminar = Users_rol.objects.filter(id_user=request.data['user_id'])
+        registros_a_eliminar.delete()
+        for rol in request.data['roles']:
+            data = {
+                "user_id": request.data['user_id'],
+                "rol_id": rol
+            }
+            serializer = Users_rolSerializer(data=data)
+            serializer.is_valid(raise_exception=True)
+            serializer.save()
+        return Response({
+            "detalle": "Se guardo correctamente.",
+            "status_code": 201
+        }, status=status.HTTP_201_CREATED)
+
+
 class RecidenciaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Recidencia
