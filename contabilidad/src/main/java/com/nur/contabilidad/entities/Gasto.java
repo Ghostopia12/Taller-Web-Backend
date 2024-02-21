@@ -38,7 +38,7 @@ public class Gasto {
 //    private Long updatedBy;
 
     @JsonProperty("condominio_id")
-    private Integer condominio_id;
+    private Integer condominioId;
 
     @JsonProperty("fecha")
     private Date fecha;

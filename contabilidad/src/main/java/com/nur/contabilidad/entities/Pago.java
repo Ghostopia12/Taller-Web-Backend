@@ -38,13 +38,13 @@ public class Pago {
 //    private Long updatedBy;
 
     @JsonProperty("deuda_id")
-    private Integer deuda_id;
+    private Integer deudaId;
 
     @JsonProperty("usuario_id")
-    private Integer usuario_id;
+    private Integer usuarioId;
 
     @JsonProperty("contable_id")
-    private Integer contable_id;
+    private Integer contableId;
 
     @JsonProperty("fecha")
     private Date fecha;

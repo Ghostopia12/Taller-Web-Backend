@@ -38,7 +38,7 @@ public class Deuda {
 //    private Long updatedBy;
 
     @JsonProperty("residencia_id")
-    private Integer residencia_id;
+    private Integer residenciaId;
 
     @JsonProperty("fecha")
     private Date fecha;
