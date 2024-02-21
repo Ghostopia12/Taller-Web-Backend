@@ -17,7 +17,7 @@ import java.util.Optional;
 @RequestMapping("/api/pagos")
 @Validated
 @RequiredArgsConstructor
-public class PagoController {
+@CrossOrigin(origins = "*")public class PagoController {
 
     private final PagoServiceImpl pagoService;
 

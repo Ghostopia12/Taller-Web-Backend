@@ -17,7 +17,7 @@ import java.util.Optional;
 @RequestMapping("/api/parametros")
 @Validated
 @RequiredArgsConstructor
-public class ParametroController {
+@CrossOrigin(origins = "*")public class ParametroController {
 
     private final ParametroServiceImpl parametroService;
 

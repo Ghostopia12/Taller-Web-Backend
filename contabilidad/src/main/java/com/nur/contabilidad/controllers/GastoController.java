@@ -17,7 +17,7 @@ import java.util.Optional;
 @RequestMapping("/api/gastos")
 @Validated
 @RequiredArgsConstructor
-public class GastoController {
+@CrossOrigin(origins = "*")public class GastoController {
 
     private final GastoServiceImpl gastoService;
 

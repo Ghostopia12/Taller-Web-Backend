@@ -17,7 +17,7 @@ import java.util.Optional;
 @RequestMapping("/api/deudas")
 @Validated
 @RequiredArgsConstructor
-public class DeudaController {
+@CrossOrigin(origins = "*")public class DeudaController {
 
     private final DeudaServiceImpl deudaService;
 
