@@ -13,46 +13,46 @@ import java.util.Optional;
 @Service
 public class ParametroServiceImpl implements IParametroService {
 
-    private final ParametroRepository pagoRepository;
+    private final ParametroRepository parametroRepository;
 
 
-    public ParametroServiceImpl(ParametroRepository pagoRepository) {
-        this.pagoRepository = pagoRepository;
+    public ParametroServiceImpl(ParametroRepository parametroRepository) {
+        this.parametroRepository = parametroRepository;
     }
 
 
     @Override
     public Page<Parametro> findAll(Integer page, Integer size, boolean enabled) {
-        return pagoRepository.findAll(enabled ? PageRequest.of(page, size): Pageable.unpaged());
+        return parametroRepository.findAll(enabled ? PageRequest.of(page, size): Pageable.unpaged());
     }
 
     @Override
-    public Parametro editParametro(Parametro pago) {
-        if (pagoRepository.findById(pago.getId()).isPresent()){
-            return pagoRepository.save(pago);
+    public Parametro editParametro(Parametro parametro) {
+        if (parametroRepository.findById(parametro.getId()).isPresent()){
+            return parametroRepository.save(parametro);
         }
         return null;
     }
 
     @Override
     public Parametro findById(Long id) {
-        return pagoRepository.findById(id).orElseThrow();
+        return parametroRepository.findById(id).orElseThrow();
     }
 
     public Optional<Parametro> findByMonto(Long monto){
-        return pagoRepository.findByMonto(monto);
+        return parametroRepository.findByMonto(monto);
     }
 
     public Optional<Parametro> findByActivo(Boolean activo){
-        return pagoRepository.findByActivo(activo);
+        return parametroRepository.findByActivo(activo);
     }
 
-    public Optional<Parametro> findByTipo(Integer tipo){
-        return pagoRepository.findByTipo(tipo);
-    }
+//    public Optional<Parametro> findByTipo(Integer tipo){
+//        return parametroRepository.findByTipo(tipo);
+//    }
 
     @Override
-    public Parametro save(Parametro pago) {
-        return pagoRepository.save(pago);
+    public Parametro save(Parametro parametro) {
+        return parametroRepository.save(parametro);
     }
 }

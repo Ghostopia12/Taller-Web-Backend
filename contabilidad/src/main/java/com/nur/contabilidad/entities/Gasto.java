@@ -1,7 +1,6 @@
 package com.nur.contabilidad.entities;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.nur.contabilidad.enums.ETipoDeuda;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;

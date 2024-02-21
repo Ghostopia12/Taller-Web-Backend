@@ -17,6 +17,6 @@ public interface ParametroRepository extends JpaRepository<Parametro, Long> {
 
     Optional<Parametro> findByActivo(Boolean activo);
 
-    Optional<Parametro> findByTipo(Integer tipo);
+    //Optional<Parametro> findByTipo(Integer tipo);
 
 }

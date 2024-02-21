@@ -13,42 +13,42 @@ import java.util.Optional;
 @Service
 public class GastoServiceImpl implements IGastoService {
 
-    private final GastoRepository pagoRepository;
+    private final GastoRepository gastoRepository;
 
 
-    public GastoServiceImpl(GastoRepository pagoRepository) {
-        this.pagoRepository = pagoRepository;
+    public GastoServiceImpl(GastoRepository gastoRepository) {
+        this.gastoRepository = gastoRepository;
     }
 
 
     @Override
     public Page<Gasto> findAll(Integer page, Integer size, boolean enabled) {
-        return pagoRepository.findAll(enabled ? PageRequest.of(page, size): Pageable.unpaged());
+        return gastoRepository.findAll(enabled ? PageRequest.of(page, size): Pageable.unpaged());
     }
 
     @Override
-    public Gasto editGasto(Gasto pago) {
-        if (pagoRepository.findById(pago.getId()).isPresent()){
-            return pagoRepository.save(pago);
+    public Gasto editGasto(Gasto gasto) {
+        if (gastoRepository.findById(gasto.getId()).isPresent()){
+            return gastoRepository.save(gasto);
         }
         return null;
     }
 
     @Override
     public Gasto findById(Long id) {
-        return pagoRepository.findById(id).orElseThrow();
+        return gastoRepository.findById(id).orElseThrow();
     }
 
     public Optional<Gasto> findByMonto(Long monto){
-        return pagoRepository.findByMonto(monto);
+        return gastoRepository.findByMonto(monto);
     }
 
-    public Optional<Gasto> findByCondominio_id(Integer condominio_id){
-        return pagoRepository.findByCondominio_id(condominio_id);
+    public Optional<Gasto> findByCondominioId(Integer condominio_id){
+        return gastoRepository.findByCondominioId(condominio_id);
     }
 
     @Override
-    public Gasto save(Gasto pago) {
-        return pagoRepository.save(pago);
+    public Gasto save(Gasto gasto) {
+        return gastoRepository.save(gasto);
     }
 }

@@ -3,7 +3,6 @@ package com.nur.contabilidad.controllers;
 
 import com.nur.contabilidad.entities.Deuda;
 import com.nur.contabilidad.services.implementations.DeudaServiceImpl;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -17,7 +16,6 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/deudas")
 @Validated
-@Tag(name = "Deuda controller")
 @RequiredArgsConstructor
 public class DeudaController {
 
@@ -70,11 +68,11 @@ public class DeudaController {
 
 
     @GetMapping("/residencia/{residencia_id}")
-    public ResponseEntity<Deuda> findByResidencia_id(@PathVariable Integer residencia_id, @RequestParam("role") int role){
+    public ResponseEntity<Deuda> findByResidenciaId(@PathVariable Integer residencia_id, @RequestParam("role") int role){
         if (role == 3 || role == 4) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
         }
-        Optional<Deuda> deuda = deudaService.findByResidencia_id(residencia_id);
+        Optional<Deuda> deuda = deudaService.findByResidenciaId(residencia_id);
         if (deuda.isEmpty()){
             return ResponseEntity.notFound().build();
         }

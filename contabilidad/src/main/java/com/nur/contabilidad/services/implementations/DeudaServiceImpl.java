@@ -13,42 +13,42 @@ import java.util.Optional;
 @Service
 public class DeudaServiceImpl implements IDeudaService {
 
-    private final DeudaRepository pagoRepository;
+    private final DeudaRepository deudaRepository;
 
 
-    public DeudaServiceImpl(DeudaRepository pagoRepository) {
-        this.pagoRepository = pagoRepository;
+    public DeudaServiceImpl(DeudaRepository deudaRepository) {
+        this.deudaRepository = deudaRepository;
     }
 
 
     @Override
     public Page<Deuda> findAll(Integer page, Integer size, boolean enabled) {
-        return pagoRepository.findAll(enabled ? PageRequest.of(page, size): Pageable.unpaged());
+        return deudaRepository.findAll(enabled ? PageRequest.of(page, size): Pageable.unpaged());
     }
 
     @Override
-    public Deuda editDeuda(Deuda pago) {
-        if (pagoRepository.findById(pago.getId()).isPresent()){
-            return pagoRepository.save(pago);
+    public Deuda editDeuda(Deuda deuda) {
+        if (deudaRepository.findById(deuda.getId()).isPresent()){
+            return deudaRepository.save(deuda);
         }
         return null;
     }
 
     @Override
     public Deuda findById(Long id) {
-        return pagoRepository.findById(id).orElseThrow();
+        return deudaRepository.findById(id).orElseThrow();
     }
 
     public Optional<Deuda> findByMonto(Long monto){
-        return pagoRepository.findByMonto(monto);
+        return deudaRepository.findByMonto(monto);
     }
 
-    public Optional<Deuda> findByResidencia_id(Integer residencia_id){
-        return pagoRepository.findByResidencia_id(residencia_id);
+    public Optional<Deuda> findByResidenciaId(Integer residencia_id){
+        return deudaRepository.findByResidenciaId(residencia_id);
     }
 
     @Override
-    public Deuda save(Deuda pago) {
-        return pagoRepository.save(pago);
+    public Deuda save(Deuda deuda) {
+        return deudaRepository.save(deuda);
     }
 }

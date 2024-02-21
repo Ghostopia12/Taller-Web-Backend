@@ -1,10 +1,8 @@
 package com.nur.contabilidad.controllers;
 
 
-import com.nur.contabilidad.entities.Deuda;
 import com.nur.contabilidad.entities.Parametro;
 import com.nur.contabilidad.services.implementations.ParametroServiceImpl;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -18,7 +16,6 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/parametros")
 @Validated
-@Tag(name = "Parametro controller")
 @RequiredArgsConstructor
 public class ParametroController {
 
@@ -81,17 +78,17 @@ public class ParametroController {
         return ResponseEntity.ok(parametro.get());
     }
 
-    @GetMapping("/tipo/{tipo}")
-    public ResponseEntity<Parametro> findByTipo(@PathVariable Integer tipo, @RequestParam("role") int role){
-        if (role != 0) {
-            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-        }
-        Optional<Parametro> parametro = parametroService.findByTipo(tipo);
-        if (parametro.isEmpty()){
-            return ResponseEntity.notFound().build();
-        }
-        return ResponseEntity.ok(parametro.get());
-    }
+//    @GetMapping("/tipo/{tipo}")
+//    public ResponseEntity<Parametro> findByTipo(@PathVariable Integer tipo, @RequestParam("role") int role){
+//        if (role != 0) {
+//            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+//        }
+//        Optional<Parametro> parametro = parametroService.findByTipo(tipo);
+//        if (parametro.isEmpty()){
+//            return ResponseEntity.notFound().build();
+//        }
+//        return ResponseEntity.ok(parametro.get());
+//    }
 
 
 }

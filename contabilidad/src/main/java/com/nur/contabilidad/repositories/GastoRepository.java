@@ -16,6 +16,6 @@ public interface GastoRepository extends JpaRepository<Gasto, Long> {
     Optional<Gasto> findByMonto(Long monto);
 
 
-    Optional<Gasto> findByCondominio_id(Integer condominio_id);
+    Optional<Gasto> findByCondominioId(Integer condominio_id);
 
 }

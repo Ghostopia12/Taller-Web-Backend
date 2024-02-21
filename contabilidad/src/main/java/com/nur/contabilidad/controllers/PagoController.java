@@ -3,7 +3,6 @@ package com.nur.contabilidad.controllers;
 
 import com.nur.contabilidad.entities.Pago;
 import com.nur.contabilidad.services.implementations.PagoServiceImpl;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -17,7 +16,6 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/pagos")
 @Validated
-@Tag(name = "Pago controller")
 @RequiredArgsConstructor
 public class PagoController {
 
@@ -72,7 +70,7 @@ public class PagoController {
         if (role == 3 || role == 4) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
         }
-        Optional<Pago> pago = pagoService.findByDeuda_id(deuda_id);
+        Optional<Pago> pago = pagoService.findByDeudaId(deuda_id);
         if (pago.isEmpty()){
             return ResponseEntity.notFound().build();
         }
@@ -85,7 +83,7 @@ public class PagoController {
         if (role == 3 || role == 4) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
         }
-        Optional<Pago> pago = pagoService.findByUsuario_id(usuario_id);
+        Optional<Pago> pago = pagoService.findByUsuarioId(usuario_id);
         if (pago.isEmpty()){
             return ResponseEntity.notFound().build();
         }
@@ -97,7 +95,7 @@ public class PagoController {
         if (role != 0 && role != 1) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
         }
-        Optional<Pago> pago = pagoService.findByContable_id(contable_id);
+        Optional<Pago> pago = pagoService.findByContableId(contable_id);
         if (pago.isEmpty()){
             return ResponseEntity.notFound().build();
         }
