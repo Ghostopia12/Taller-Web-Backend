@@ -62,7 +62,6 @@ class Users_rolViewSet(viewsets.ModelViewSet):
                 "status_code": 404
             }, status=status.HTTP_404_NOT_FOUND)
 
-
     @action(detail=False, methods=['post'], url_path="actualizar-roles",
             name="Actualizar los roles de un usuario")
     def user_all(self, request, pk=None):
