@@ -24,6 +24,7 @@ namespace UsuariosTallerWeb.Controllers
         };
 
         private readonly IUserService _userService;
+
         private IConfiguration _config;
         public UsuariosController(IUserService userService, IConfiguration config)
         {
@@ -88,6 +89,49 @@ namespace UsuariosTallerWeb.Controllers
             return CreatedAtRoute(nameof(GetUser), new { userId = createdUser.Id }, createdUser);
         }
 
+        [HttpPut]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Update([FromBody] User updatingUser)
+        {
+            if (updatingUser == null)
+            {
+                return BadRequest("Invalid user data");
+            }
+
+            var createdUser = await _userService.UpdateUser(updatingUser);
+
+            if (createdUser == null)
+            {
+                return BadRequest("Failed to create user");
+            }
+
+            var userList = updatingUser.Roles.ToList();
+
+            var jsonContent = new StringContent(
+                JsonSerializer.Serialize(new
+                {
+                    user_id = createdUser.Id,
+                    roles = userList
+                }),
+                Encoding.UTF8,
+                "application/json"
+            );
+
+
+            using var response = await httpClient.PostAsync(
+                "actualizar-roles/",
+                jsonContent
+            );
+
+            response.EnsureSuccessStatusCode();
+
+            var jsonResponse = await response.Content.ReadAsStringAsync();
+            Console.WriteLine($"{jsonResponse}\n");
+
+            return CreatedAtRoute(nameof(GetUser), new { userId = createdUser.Id }, createdUser);
+        }
+
         [HttpGet("{userId}", Name = nameof(GetUser))]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -99,6 +143,20 @@ namespace UsuariosTallerWeb.Controllers
                 return NotFound();
             }
             return Ok(user);
+        }
+
+        [HttpGet("/api/roles")]
+        [Authorize]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult GetRoles()
+        {
+            var roles = _userService.GetRoles();
+            if (roles == null)
+            {
+                return NoContent();
+            }
+            return Ok(roles);
         }
 
         [HttpPost("/authenticate")]
@@ -133,7 +191,7 @@ namespace UsuariosTallerWeb.Controllers
 
 
             var token = new JwtSecurityToken(_config["Jwt:Issuer"], _config["Jwt:Audience"], [
-                new Claim(ClaimTypes.NameIdentifier, user.Username),
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.Role, string.Join(",", roleList))
                 ], expires: DateTime.UtcNow.AddHours(1),

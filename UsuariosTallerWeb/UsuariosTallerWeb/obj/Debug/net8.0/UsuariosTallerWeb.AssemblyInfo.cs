@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UsuariosTallerWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa2417a5df3b74f95a9b2cd3629289a958bda41f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03b6d0c73aacf4228c6cb2a1b87caf1840c48da8")]
 [assembly: System.Reflection.AssemblyProductAttribute("UsuariosTallerWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UsuariosTallerWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

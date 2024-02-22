@@ -72,32 +72,35 @@ namespace UsuariosTallerWeb.Application.Services
             return users!;
         }
 
-        public Task<User> UpdateUser(int id, User user)
+        public async Task<User> UpdateUser(User user)
         {
-            throw new NotImplementedException();
+            var id = user.Id;
+            var updatedUser = await _userRepository.UpdateUser(id, user);
+            return updatedUser;
         }
 
 
-        
+
 
         public async Task<User?> AuthenticateUser(LoginDto loginUser)
         {
             var user = await _userRepository.GetUserByUsername(loginUser.Username);
             if (user == null)
             {
-                return null; 
+                return null;
             }
 
             if (BCrypt.Net.BCrypt.Verify(loginUser.Password, user.Password))
             {
-                return user; 
+                return user;
             }
             else
             {
-                return null; 
+                return null;
             }
         }
 
+       
         private async Task<List<Rol>> GetRolesForUser(List<int> roleIds)
         {
             var roles = new List<Rol>();
@@ -112,6 +115,11 @@ namespace UsuariosTallerWeb.Application.Services
             return roles;
         }
 
-
+        public async Task<IEnumerable<Rol>?> GetRoles()
+        {
+            var roles = await _roleRepository.GetRoles();
+            return roles;
+        }
+       
     }
 }

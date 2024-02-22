@@ -41,12 +41,12 @@ namespace UsuariosTallerWeb.Infraestructure.Repositories
 
         public async Task<IEnumerable<Rol>?> GetRoles()
         {
-            var roles = await _context.Roles
+            var roles =  _context.Roles
                                       .AsNoTracking()
                                       .Select(x => new Rol { Id = x.Id, Nombre = x.Nombre }) // Proyecta solo Id y Nombre
                                       .ToListAsync();
 
-            return roles;
+            return roles.Result;
         }
 
         public Task<Rol?> UpdateRol(int id, Rol rol)

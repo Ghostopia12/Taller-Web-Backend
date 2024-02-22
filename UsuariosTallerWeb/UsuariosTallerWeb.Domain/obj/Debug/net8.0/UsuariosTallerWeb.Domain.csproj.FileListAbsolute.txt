@@ -10,3 +10,15 @@ C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug
 C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\refint\UsuariosTallerWeb.Domain.dll
 C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.pdb
 C:\Users\Ronal\source\repos\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\ref\UsuariosTallerWeb.Domain.dll
+D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\bin\Debug\net8.0\UsuariosTallerWeb.Domain.deps.json
+D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\bin\Debug\net8.0\UsuariosTallerWeb.Domain.dll
+D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\bin\Debug\net8.0\UsuariosTallerWeb.Domain.pdb
+D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.AssemblyInfoInputs.cache
+D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.AssemblyInfo.cs
+D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.csproj.CoreCompileInputs.cache
+D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.sourcelink.json
+D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.dll
+D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\refint\UsuariosTallerWeb.Domain.dll
+D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.pdb
+D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\ref\UsuariosTallerWeb.Domain.dll

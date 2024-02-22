@@ -59,11 +59,35 @@ namespace UsuariosTallerWeb.Infraestructure.Repositories
             return users.Result;
         }
 
-        public Task<User?> UpdateUser(int id, User User)
+        public async Task<User?> UpdateUser(int id, User user)
         {
-            throw new NotImplementedException();
-        }
+            var existingUser = await _context.Users
+                                              .Include(u => u.Roles) // Cargar la relación de roles
+                                              .FirstOrDefaultAsync(u => u.Id == id);
 
+            if (existingUser == null)
+            {
+                return null; // Usuario no encontrado
+            }
+
+            // Actualizar propiedades del usuario existente
+            existingUser.Name = user.Name;
+            existingUser.Username = user.Username;
+            existingUser.Email = user.Email;
+            existingUser.Roles.Clear();
+            foreach (var role in user.Roles)
+            {
+                var existingRole = await _context.Roles.FirstOrDefaultAsync(r => r.Id == role.Id);
+                if (existingRole != null)
+                {
+                    existingUser.Roles.Add(existingRole);
+                }
+            }
+
+            await _context.SaveChangesAsync(); // Guardar cambios en la base de datos
+
+            return existingUser;
+        }
         public async Task<User?> GetUserByUsername(string username)
         {
             var user = _context.Users
