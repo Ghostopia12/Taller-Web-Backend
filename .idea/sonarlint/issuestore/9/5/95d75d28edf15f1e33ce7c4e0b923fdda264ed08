@@ -1,0 +1,8 @@
+
+Y
+java:S18545"<Remove this useless assignment to local variable "response".(ÓÆÕ…8µè®£Û1
+X	java:S125*"<This block of commented-out lines of code should be removed.(˜ó®8·è®£Û1
+\
+java:S11172"@Rename "restTemplate" which hides the field declared at line 25.(— ’8·è®£Û1
+J
+java:S14815"-Remove this unused "response" local variable.(ÓÆÕ…8»è®£Û1

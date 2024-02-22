@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ronal\\source\\repos\\UsuariosTallerWeb\\UsuariosTallerWeb.Infraestructure\\UsuariosTallerWeb.Infraestructure.csproj": {}
+    "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\UsuariosTallerWeb\\UsuariosTallerWeb.Infraestructure\\UsuariosTallerWeb.Infraestructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ronal\\source\\repos\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\UsuariosTallerWeb.Domain.csproj": {
+    "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\UsuariosTallerWeb.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ronal\\source\\repos\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\UsuariosTallerWeb.Domain.csproj",
+        "projectUniqueName": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\UsuariosTallerWeb.Domain.csproj",
         "projectName": "UsuariosTallerWeb.Domain",
-        "projectPath": "C:\\Users\\Ronal\\source\\repos\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\UsuariosTallerWeb.Domain.csproj",
-        "packagesPath": "C:\\Users\\Ronal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ronal\\source\\repos\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\obj\\",
+        "projectPath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\UsuariosTallerWeb.Domain.csproj",
+        "packagesPath": "C:\\Users\\raamo\\.nuget\\packages\\",
+        "outputPath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ronal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\raamo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,30 +50,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ronal\\source\\repos\\UsuariosTallerWeb\\UsuariosTallerWeb.Infraestructure\\UsuariosTallerWeb.Infraestructure.csproj": {
+    "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\UsuariosTallerWeb\\UsuariosTallerWeb.Infraestructure\\UsuariosTallerWeb.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ronal\\source\\repos\\UsuariosTallerWeb\\UsuariosTallerWeb.Infraestructure\\UsuariosTallerWeb.Infraestructure.csproj",
+        "projectUniqueName": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\UsuariosTallerWeb\\UsuariosTallerWeb.Infraestructure\\UsuariosTallerWeb.Infraestructure.csproj",
         "projectName": "UsuariosTallerWeb.Infraestructure",
-        "projectPath": "C:\\Users\\Ronal\\source\\repos\\UsuariosTallerWeb\\UsuariosTallerWeb.Infraestructure\\UsuariosTallerWeb.Infraestructure.csproj",
-        "packagesPath": "C:\\Users\\Ronal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ronal\\source\\repos\\UsuariosTallerWeb\\UsuariosTallerWeb.Infraestructure\\obj\\",
+        "projectPath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\UsuariosTallerWeb\\UsuariosTallerWeb.Infraestructure\\UsuariosTallerWeb.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\raamo\\.nuget\\packages\\",
+        "outputPath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\UsuariosTallerWeb\\UsuariosTallerWeb.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ronal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\raamo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,15 +72,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Ronal\\source\\repos\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\UsuariosTallerWeb.Domain.csproj": {
-                "projectPath": "C:\\Users\\Ronal\\source\\repos\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\UsuariosTallerWeb.Domain.csproj"
+              "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\UsuariosTallerWeb.Domain.csproj": {
+                "projectPath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\UsuariosTallerWeb.Domain.csproj"
               }
             }
           }
@@ -108,28 +93,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -141,12 +104,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
