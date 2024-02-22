@@ -1,0 +1,49 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.2'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.nur'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '21'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-validation:3.2.1'
+	implementation 'io.jsonwebtoken:jjwt-api:0.11.2'
+	implementation 'io.jsonwebtoken:jjwt-impl:0.11.2'
+	implementation 'io.jsonwebtoken:jjwt-jackson:0.11.2'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'org.postgresql:postgresql'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+	//swager(disable this on prod)
+	// http://localhost:8080/swagger-ui.html
+	// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui
+	//implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.2.0'
+	//implementation group: 'org.springframework.boot', name: 'spring-boot-starter-oauth2-resource-server'
+	// https://mvnrepository.com/artifact/org.hibernate/hibernate-envers
+	implementation group: 'org.hibernate', name: 'hibernate-envers', version: '6.4.1.Final', ext: 'pom'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
