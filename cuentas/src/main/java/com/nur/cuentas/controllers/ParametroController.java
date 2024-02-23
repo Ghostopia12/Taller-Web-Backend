@@ -1,6 +1,7 @@
 package com.nur.cuentas.controllers;
 
 
+import com.nur.cuentas.entities.Pago;
 import com.nur.cuentas.entities.Parametro;
 import com.nur.cuentas.services.implementations.ParametroServiceImpl;
 import lombok.RequiredArgsConstructor;
@@ -10,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -23,21 +25,15 @@ import java.util.Optional;
 
     @GetMapping("/all")
     public ResponseEntity<Map<String, Object>> findAll(
-            @RequestParam(required = false, defaultValue = "1") Integer page,
-            @RequestParam(required = false, defaultValue = "10") Integer size,
-            @RequestParam(required = false, defaultValue = "true") Boolean enabled,
             @RequestParam("role") int role){
         if (role != 0) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
         }
-        Page<Parametro> parametros = parametroService.findAll(page, size, enabled);
-        Map<String, Object> response = Map.of(
-                "parametros", parametros.getContent(),
-                "currentPage", parametros.getNumber(),
-                "totalItems", parametros.getTotalElements(),
-                "totalPages", parametros.getTotalPages()
-        );
-        return ResponseEntity.ok(response);
+        List<Parametro> parametros = parametroService.findAll();
+        if (parametros.isEmpty()){
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(Map.of("parametros", parametros));
     }
 
 

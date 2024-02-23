@@ -3,9 +3,11 @@ package com.nur.cuentas.services.interfaces;
 import com.nur.cuentas.entities.Gasto;
 import org.springframework.data.domain.Page;
 
+import java.util.List;
+
 public interface IGastoService {
 
-    Page<Gasto> findAll(Integer page, Integer size, boolean enabled);
+    List<Gasto> findAll();
 
     Gasto editGasto(Gasto product);
 

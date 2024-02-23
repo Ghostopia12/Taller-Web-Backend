@@ -8,6 +8,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -22,8 +23,8 @@ public class ParametroServiceImpl implements IParametroService {
 
 
     @Override
-    public Page<Parametro> findAll(Integer page, Integer size, boolean enabled) {
-        return parametroRepository.findAll(enabled ? PageRequest.of(page, size): Pageable.unpaged());
+    public List<Parametro> findAll() {
+        return parametroRepository.findAll();
     }
 
     @Override

@@ -8,6 +8,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -22,8 +23,8 @@ public class PagoServiceImpl implements IPagoService {
 
 
     @Override
-    public Page<Pago> findAll(Integer page, Integer size, boolean enabled) {
-        return pagoRepository.findAll(enabled ? PageRequest.of(page, size): Pageable.unpaged());
+    public List<Pago> findAll() {
+        return pagoRepository.findAll();
     }
 
     @Override

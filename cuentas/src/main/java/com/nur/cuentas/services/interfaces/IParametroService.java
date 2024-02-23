@@ -3,9 +3,11 @@ package com.nur.cuentas.services.interfaces;
 import com.nur.cuentas.entities.Parametro;
 import org.springframework.data.domain.Page;
 
+import java.util.List;
+
 public interface IParametroService {
 
-    Page<Parametro> findAll(Integer page, Integer size, boolean enabled);
+    List<Parametro> findAll();
 
     Parametro editParametro(Parametro product);
 
