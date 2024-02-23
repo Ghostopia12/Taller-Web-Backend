@@ -70,7 +70,7 @@ class Users_rolViewSet(viewsets.ModelViewSet):
         for rol in request.data['roles']:
             data = {
                 "user_id": request.data['user_id'],
-                "rol_id": rol['id']
+                "rol_id": rol['Id']
             }
             serializer = Users_rolSerializer(data=data)
             serializer.is_valid(raise_exception=True)
