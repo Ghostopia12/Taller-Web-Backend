@@ -65,7 +65,7 @@ class Users_rolViewSet(viewsets.ModelViewSet):
     @action(detail=False, methods=['post'], url_path="actualizar-roles",
             name="Actualizar los roles de un usuario")
     def user_all(self, request, pk=None):
-        registros_a_eliminar = Users_rol.objects.filter(id_user=request.data['user_id'])
+        registros_a_eliminar = Users_rol.objects.filter(user_id=request.data['user_id'])
         registros_a_eliminar.delete()
         for rol in request.data['roles']:
             data = {
