@@ -3,9 +3,11 @@ package com.nur.cuentas.services.interfaces;
 import com.nur.cuentas.entities.Deuda;
 import org.springframework.data.domain.Page;
 
+import java.util.List;
+
 public interface IDeudaService {
 
-    Page<Deuda> findAll(Integer page, Integer size, boolean enabled);
+    List<Deuda> findAll();
 
     Deuda editDeuda(Deuda product);
 

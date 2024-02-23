@@ -8,6 +8,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -22,8 +23,8 @@ public class DeudaServiceImpl implements IDeudaService {
 
 
     @Override
-    public Page<Deuda> findAll(Integer page, Integer size, boolean enabled) {
-        return deudaRepository.findAll(enabled ? PageRequest.of(page, size): Pageable.unpaged());
+    public List<Deuda> findAll() {
+        return deudaRepository.findAll();
     }
 
     @Override
