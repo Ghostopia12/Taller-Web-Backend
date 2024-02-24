@@ -19,6 +19,7 @@ namespace Infrastructure.EntityFramework.Config.WriteConfig.Condominios
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).HasColumnName("id");
             builder.Property(x => x.Nombre).HasColumnName("nombre").HasConversion(nombreConverter);
+            builder.Property(x => x.Eliminado).HasColumnName("eliminado");
 
             builder.Ignore(x => x.DomainEvents);
             builder.Ignore("_domainEvents");

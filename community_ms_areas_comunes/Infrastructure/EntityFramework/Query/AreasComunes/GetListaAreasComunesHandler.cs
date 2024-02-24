@@ -19,7 +19,7 @@ namespace Infrastructure.EntityFramework.Query.AreasComunes
         }
         public async Task<IEnumerable<AreaComunDto>> Handle(GetListaAreasComunesQuery request, CancellationToken cancellationToken)
         {
-            var query = areaComun.AsNoTracking().Include(o => o.Turno).AsQueryable();
+            var query = areaComun.AsNoTracking().Include(o => o.Turno).Where(area=>area.Eliminado==false).AsQueryable();
 
             var lista = await query.Select(areaComun => new AreaComunDto
             {
@@ -28,6 +28,7 @@ namespace Infrastructure.EntityFramework.Query.AreasComunes
                 Descripcion = areaComun.Descripcion,
                 CapacidadMaxima = areaComun.CapacidadMaxima,
                 Estado = areaComun.Estado,
+                FinCierre = areaComun.FinCierre,
                 Turno = new TurnoDto
                 {
                     Id = areaComun.Turno.Id,

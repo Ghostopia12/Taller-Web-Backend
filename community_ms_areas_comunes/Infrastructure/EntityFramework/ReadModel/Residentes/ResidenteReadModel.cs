@@ -8,5 +8,7 @@ namespace Infrastructure.EntityFramework.ReadModel.Residentes
         public Guid Id { get; set; }
         public bool Deudor { get; set; }
         public string Nombre { get; set; }
+        public bool Eliminado { get; set; }
+
     }
 }

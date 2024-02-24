@@ -22,3 +22,4 @@ class AreaComun(models.Model):
     turno = models.CharField(max_length=50)
     estado = models.IntegerField()
     user_id = models.IntegerField()
+    residencia_id= models.IntegerField(blank=True, null=True)

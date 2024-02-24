@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lrk2v8z9z7MQitV0eB7W0P27RJD4cIjp7z84MchXBJMa+MlUtTkcVxss3KrUQRWMQbElvPRPWB4g0crNlMcyvw==",
+  "dgSpecHash": "HXwzp4UsqbzyVM5kdaWwkMP0zGPKQWHQky5X+WWy9CoxgWL+l2fkLbNtGc+kWF202769FnqTHk8OFw5x6LFPUQ==",
   "success": true,
-  "projectFilePath": "D:\\GitMolina2\\Taller-Web-Backend\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\UsuariosTallerWeb.Domain.csproj",
+  "projectFilePath": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\UsuariosTallerWeb\\UsuariosTallerWeb.Domain\\UsuariosTallerWeb.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

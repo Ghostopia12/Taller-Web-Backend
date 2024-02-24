@@ -10,5 +10,6 @@ namespace Application.UseCase.Command.AreasComunes.CrearAreaComun
         public string Descripcion { get; set; }
         public int CapacidadMaxima { get; set; }
         public string Estado { get; set; }
+
     }
 }

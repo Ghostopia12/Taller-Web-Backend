@@ -16,7 +16,7 @@ namespace Infrastructure.EntityFramework.Query.Condominios
         }
         public async Task<IEnumerable<CondominioDto>> Handle(GetListaCondominiosQuery request, CancellationToken cancellationToken)
         {
-            var query = condominio.AsNoTracking().AsQueryable();
+            var query = condominio.AsNoTracking().Where(condominio => condominio.Eliminado == false).AsQueryable();
 
             var lista = await query.Select(condominio => new CondominioDto
             {

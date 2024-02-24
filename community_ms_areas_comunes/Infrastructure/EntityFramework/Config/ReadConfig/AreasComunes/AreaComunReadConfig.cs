@@ -16,6 +16,8 @@ namespace Infrastructure.EntityFramework.Config.ReadConfig.AreasComunes
             builder.Property(x => x.Descripcion).HasColumnName("descripcion");
             builder.Property(x => x.Estado).HasColumnName("estado");
             builder.Property(x => x.CapacidadMaxima).HasColumnName("capacidad_maxima");
+            builder.Property(x => x.FinCierre).HasColumnName("fin_cierre");
+            builder.Property(x => x.Eliminado).HasColumnName("eliminado");
 
             builder.Property(x => x.TurnoId).HasColumnName("turno_id");
             builder.HasOne(x => x.Turno).WithMany().HasForeignKey(x => x.TurnoId).OnDelete(DeleteBehavior.Restrict);

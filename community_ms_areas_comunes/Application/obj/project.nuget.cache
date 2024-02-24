@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "zx+YH9A+mMIY9Pr/ZiaTTskdRFvCIQrExdhh3+B+/5BfVbEqfZjbjfAAQpfp1f6p8pVYm1+anQo40GSZJf0GTg==",
+  "dgSpecHash": "7alh/+kU2HV1TjFgmfodh37O8jTSDTufKeSPcQ2zu26AKYsh+SsZtCDZgQWLARpAnNmmnEXUJU1bNU3kmb38zQ==",
   "success": true,
-  "projectFilePath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Application\\Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\raamo\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
-    "C:\\Users\\raamo\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\raamo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\raamo\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
-    "C:\\Users\\raamo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
-    "C:\\Users\\raamo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.16\\microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512"
+    "C:\\Users\\RINOCERONTE\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\RINOCERONTE\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\RINOCERONTE\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

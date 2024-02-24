@@ -4,6 +4,6 @@
     {
         Solicitado,
         Aceptado,
-        Rechazado
+        Espera
     }
 }

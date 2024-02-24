@@ -20,7 +20,8 @@ namespace Infrastructure.EntityFramework.Repository.AreasComunes
 
         public async Task<AreaComun?> FindByIdAsync(Guid id)
         {
-            return await _context.AreaComun.FirstOrDefaultAsync(x => x.Id == id);
+            return await _context.AreaComun
+                            .FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public Task RemoveAsync(AreaComun obj)

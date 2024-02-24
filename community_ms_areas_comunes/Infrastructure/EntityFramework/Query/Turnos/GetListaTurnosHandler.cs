@@ -16,7 +16,7 @@ namespace Infrastructure.EntityFramework.Query.Turnos
         }
         public async Task<IEnumerable<TurnoDto>> Handle(GetListaTurnosQuery request, CancellationToken cancellationToken)
         {
-            var query = turnos.AsNoTracking().AsQueryable();
+            var query = turnos.AsNoTracking().Where(turno => turno.Eliminado == false).AsQueryable();
 
             var lista = await query.Select(turno => new TurnoDto
             {

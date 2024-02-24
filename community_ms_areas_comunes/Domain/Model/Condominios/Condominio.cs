@@ -6,6 +6,7 @@ namespace Domain.Model.Condominios
     public class Condominio : AggregateRoot<Guid>
     {
         public NombreCondominioValue Nombre { get; private set; }
+
         public Condominio(string nombre)
         {
 

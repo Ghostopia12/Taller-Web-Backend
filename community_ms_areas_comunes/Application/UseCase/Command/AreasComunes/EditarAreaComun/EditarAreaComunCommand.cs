@@ -11,6 +11,7 @@ namespace Application.UseCase.Command.AreasComunes.EditarAreaComun
         public string Descripcion { get; set; }
         public int CapacidadMaxima { get; set; }
         public string Estado { get; set; }
+        public DateTime? FinCierre { get; set; }
 
     }
 }

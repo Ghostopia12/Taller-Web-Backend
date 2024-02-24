@@ -13,6 +13,8 @@ namespace Infrastructure.EntityFramework.Config.ReadConfig.Residentes
             builder.Property(x => x.Id).HasColumnName("id");
             builder.Property(x => x.Nombre).HasColumnName("nombre");
             builder.Property(x => x.Deudor).HasColumnName("deudor");
+            builder.Property(x => x.Eliminado).HasColumnName("eliminado");
+
         }
     }
 }

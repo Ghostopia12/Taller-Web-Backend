@@ -22,3 +22,15 @@ D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\
 D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\refint\UsuariosTallerWeb.Domain.dll
 D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.pdb
 D:\GitMolina2\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\ref\UsuariosTallerWeb.Domain.dll
+C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\bin\Debug\net8.0\UsuariosTallerWeb.Domain.deps.json
+C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\bin\Debug\net8.0\UsuariosTallerWeb.Domain.dll
+C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\bin\Debug\net8.0\UsuariosTallerWeb.Domain.pdb
+C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.AssemblyInfoInputs.cache
+C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.AssemblyInfo.cs
+C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.csproj.CoreCompileInputs.cache
+C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.sourcelink.json
+C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.dll
+C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\refint\UsuariosTallerWeb.Domain.dll
+C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\UsuariosTallerWeb.Domain.pdb
+C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\UsuariosTallerWeb\UsuariosTallerWeb.Domain\obj\Debug\net8.0\ref\UsuariosTallerWeb.Domain.dll

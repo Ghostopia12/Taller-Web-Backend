@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Application\\Application.csproj": {}
+    "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Application\\Application.csproj": {}
   },
   "projects": {
-    "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Application\\Application.csproj": {
+    "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\raamo\\.nuget\\packages\\",
-        "outputPath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Application\\obj\\",
+        "projectPath": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\RINOCERONTE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\raamo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RINOCERONTE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Domain\\Domain.csproj"
+              "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Domain\\Domain.csproj"
               }
             }
           }
@@ -65,40 +69,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Domain\\Domain.csproj": {
+    "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\raamo\\.nuget\\packages\\",
-        "outputPath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\RINOCERONTE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\raamo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RINOCERONTE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,8 +106,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Shared\\Shared.csproj": {
-                "projectPath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Shared\\Shared.csproj"
+              "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Shared\\Shared.csproj"
               }
             }
           }
@@ -143,40 +137,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Shared\\Shared.csproj": {
+    "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Shared\\Shared.csproj",
-        "packagesPath": "C:\\Users\\raamo\\.nuget\\packages\\",
-        "outputPath": "D:\\Universidad\\8 Semestre\\Taller De Ingenieria Web\\Verano\\xd\\Taller-Web-Backend\\community_ms_areas_comunes\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\RINOCERONTE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\raamo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RINOCERONTE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -223,26 +207,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

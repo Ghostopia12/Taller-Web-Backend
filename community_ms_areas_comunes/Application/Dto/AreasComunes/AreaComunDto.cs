@@ -12,5 +12,7 @@ namespace Application.Dto.AreasComunes
         public string Descripcion { get; set; }
         public int CapacidadMaxima { get; set; }
         public string Estado { get; set; }
+        public DateTime FinCierre { get; set; }
+
     }
 }
