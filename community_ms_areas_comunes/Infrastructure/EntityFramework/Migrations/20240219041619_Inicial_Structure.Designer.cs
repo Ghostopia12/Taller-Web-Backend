@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Infrastructure.EntityFramework.Migrations
 {
     [DbContext(typeof(ReadDbContext))]
-    [Migration("20240210001718_v2")]
-    partial class v2
+    [Migration("20240219041619_Inicial_Structure")]
+    partial class Inicial_Structure
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,10 +45,18 @@ namespace Infrastructure.EntityFramework.Migrations
                         .HasColumnType("text")
                         .HasColumnName("descripcion");
 
+                    b.Property<bool>("Eliminado")
+                        .HasColumnType("boolean")
+                        .HasColumnName("eliminado");
+
                     b.Property<string>("Estado")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("estado");
+
+                    b.Property<DateTime>("FinCierre")
+                        .HasColumnType("timestamp without time zone")
+                        .HasColumnName("fin_cierre");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -75,6 +83,10 @@ namespace Infrastructure.EntityFramework.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("id");
 
+                    b.Property<bool>("Eliminado")
+                        .HasColumnType("boolean")
+                        .HasColumnName("eliminado");
+
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("text")
@@ -83,6 +95,47 @@ namespace Infrastructure.EntityFramework.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Condominio", (string)null);
+                });
+
+            modelBuilder.Entity("Infrastructure.EntityFramework.ReadModel.Reservas.ReservaReadModel", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid")
+                        .HasColumnName("id");
+
+                    b.Property<Guid>("AreaComunId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("area_comun_id");
+
+                    b.Property<bool>("Eliminado")
+                        .HasColumnType("boolean")
+                        .HasColumnName("eliminado");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("estado");
+
+                    b.Property<DateTime>("Fin")
+                        .HasColumnType("timestamp without time zone")
+                        .HasColumnName("fin");
+
+                    b.Property<DateTime>("Inicio")
+                        .HasColumnType("timestamp without time zone")
+                        .HasColumnName("inicio");
+
+                    b.Property<Guid>("ResidenteId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("residente_id");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AreaComunId");
+
+                    b.HasIndex("ResidenteId");
+
+                    b.ToTable("Reserva", (string)null);
                 });
 
             modelBuilder.Entity("Infrastructure.EntityFramework.ReadModel.Residentes.ResidenteReadModel", b =>
@@ -95,6 +148,10 @@ namespace Infrastructure.EntityFramework.Migrations
                     b.Property<bool>("Deudor")
                         .HasColumnType("boolean")
                         .HasColumnName("deudor");
+
+                    b.Property<bool>("Eliminado")
+                        .HasColumnType("boolean")
+                        .HasColumnName("eliminado");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -112,6 +169,10 @@ namespace Infrastructure.EntityFramework.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid")
                         .HasColumnName("id");
+
+                    b.Property<bool>("Eliminado")
+                        .HasColumnType("boolean")
+                        .HasColumnName("eliminado");
 
                     b.Property<TimeOnly>("Fin")
                         .HasColumnType("time without time zone")
@@ -143,6 +204,25 @@ namespace Infrastructure.EntityFramework.Migrations
                     b.Navigation("Condominio");
 
                     b.Navigation("Turno");
+                });
+
+            modelBuilder.Entity("Infrastructure.EntityFramework.ReadModel.Reservas.ReservaReadModel", b =>
+                {
+                    b.HasOne("Infrastructure.EntityFramework.ReadModel.AreasComunes.AreaComunReadModel", "AreaComun")
+                        .WithMany()
+                        .HasForeignKey("AreaComunId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Infrastructure.EntityFramework.ReadModel.Residentes.ResidenteReadModel", "Residente")
+                        .WithMany()
+                        .HasForeignKey("ResidenteId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("AreaComun");
+
+                    b.Navigation("Residente");
                 });
 #pragma warning restore 612, 618
         }

@@ -13,10 +13,12 @@ namespace Infrastructure.EntityFramework.ReadModel.AreasComunes
         public string Descripcion { get; set; }
         public int CapacidadMaxima{ get; set; }
         public string Estado { get; set; }
+        public DateTime FinCierre { get; set; }
         public TurnoReadModel Turno { get; set; }
         public Guid TurnoId { get;  set; }
         public CondominioReadModel Condominio { get; set; }
         public Guid CondominioId { get; set; }
+        public bool Eliminado { get; set; }
 
     }
 }

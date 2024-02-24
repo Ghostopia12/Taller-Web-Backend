@@ -3,6 +3,8 @@
     public abstract class Entity<TId>
     {
         public TId Id { get; protected set; }
+        public bool Eliminado { get; protected set; }
+
 
         private readonly ICollection<DomainEvent> _domainEvents;
 
@@ -10,6 +12,7 @@
 
         protected Entity()
         {
+            Eliminado = false;
             _domainEvents = new List<DomainEvent>();
         }
 
@@ -33,6 +36,11 @@
             {
                 throw new BussinessRuleValidationException(rule);
             }
+        }
+
+        public void delete()
+        {
+            Eliminado = true;
         }
     }
 }

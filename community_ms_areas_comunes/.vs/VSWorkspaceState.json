@@ -3,14 +3,14 @@
     "",
     "\\Domain",
     "\\Domain\\Model",
-    "\\Domain\\Model\\AreasComunes",
+    "\\Domain\\Model\\Reservas",
     "\\Infrastructure",
     "\\Infrastructure\\EntityFramework",
     "\\Infrastructure\\EntityFramework\\Repository",
-    "\\Infrastructure\\EntityFramework\\Repository\\AreasComunes",
+    "\\Infrastructure\\EntityFramework\\Repository\\Reservas",
     "\\Web",
     "\\Web\\Controllers"
   ],
-  "SelectedNode": "\\Web\\Controllers\\AreaComunController.cs",
+  "SelectedNode": "\\community_ms_areas_comunes.sln",
   "PreviewInSolutionExplorer": false
 }

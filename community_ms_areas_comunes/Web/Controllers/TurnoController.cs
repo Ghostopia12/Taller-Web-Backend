@@ -1,4 +1,5 @@
 ﻿using Application.UseCase.Command.Turnos.CrearTurno;
+using Application.UseCase.Command.Turnos.EliminarTurno;
 using Application.UseCase.Query.Turnos;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -43,6 +44,21 @@ namespace Web.Controllers
                 return NotFound();
             }
             return Ok(result);
+        }
+
+        [HttpDelete]
+        public async Task<ActionResult> EliminarTurno([FromBody] EliminarTurnoCommand command)
+        {
+            try
+            {
+                var resultGuid = await _mediator.Send(command);
+                return Ok(resultGuid);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al eliminar el turno");
+                return BadRequest();
+            }
         }
     }
 }

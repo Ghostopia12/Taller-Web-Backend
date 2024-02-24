@@ -1,9 +1,8 @@
-﻿
-using Application.UseCase.Command.AreasComunes.CrearAreaComun;
+﻿using Application.UseCase.Command.AreasComunes.CrearAreaComun;
 using Application.UseCase.Command.AreasComunes.EditarAreaComun;
 using Application.UseCase.Command.AreasComunes.EliminarAreaComun;
+using Application.UseCase.Command.AreasComunes.InhabilitarAreaComun;
 using Application.UseCase.Query.AreasComunes;
-using Application.UseCase.Query.Turnos;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -74,6 +73,20 @@ namespace Web.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error al editar el area comun");
+                return BadRequest();
+            }
+        }
+        [HttpPatch]
+        public async Task<IActionResult> InhabilitarAreaComun([FromBody] InhabilitarAreaComunCommand command)
+        {
+            try
+            {
+                var resultGuid = await _mediator.Send(command);
+                return Ok(resultGuid);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al inhabilitar el area comun");
                 return BadRequest();
             }
         }

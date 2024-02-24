@@ -25,7 +25,8 @@ namespace Application.UseCase.Command.AreasComunes.EliminarAreaComun
                 throw new BussinessRuleValidationException("Area no encontrada");
             }
 
-            await _areaComunRepository.RemoveAsync(area);
+            area.delete();
+            await _areaComunRepository.UpdateAsync(area);
             await _unitOfWork.Commit();
             return area.Id;
         }

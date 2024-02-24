@@ -32,6 +32,8 @@ namespace Infrastructure.EntityFramework.Config.WriteConfig.AreasComunes
             builder.Property(x => x.Descripcion).HasColumnName("descripcion").HasConversion(descripcionConverter);
             builder.Property(x => x.CapacidadMaxima).HasColumnName("capacidad_maxima").HasConversion(cantidadConverter);
             builder.Property(x => x.Estado).HasColumnName("estado").HasConversion(nombreConverter);
+            builder.Property(x => x.FinCierre).HasColumnName("fin_cierre");
+            builder.Property(x => x.Eliminado).HasColumnName("eliminado");
 
             builder.Property(x => x.TurnoId).HasColumnName("turno_id");
             builder.Property(x => x.CondominioId).HasColumnName("condominio_id");

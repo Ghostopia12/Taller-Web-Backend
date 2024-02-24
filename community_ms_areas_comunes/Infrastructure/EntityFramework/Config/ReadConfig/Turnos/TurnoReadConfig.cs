@@ -13,6 +13,8 @@ namespace Infrastructure.EntityFramework.Config.ReadConfig.Turnos
             builder.Property(x => x.Id).HasColumnName("id");
             builder.Property(x => x.Inicio).HasColumnName("inicio");
             builder.Property(x => x.Fin).HasColumnName("fin");
+            builder.Property(x => x.Eliminado).HasColumnName("eliminado");
+
         }
     }
 }

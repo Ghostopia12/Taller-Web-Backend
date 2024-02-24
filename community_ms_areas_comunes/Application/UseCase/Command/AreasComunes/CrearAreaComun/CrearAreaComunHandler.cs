@@ -40,8 +40,6 @@ namespace Application.UseCase.Command.AreasComunes.CrearAreaComun
             }
 
             var areaComun = _areaComunFactory.Crear(request.CondominioId, request.TurnoId, request.Nombre, request.Descripcion, request.CapacidadMaxima, request.Estado);
-            System.Diagnostics.Debug.WriteLine(areaComun.CondominioId);
-            System.Diagnostics.Debug.WriteLine(request.CondominioId);
             await _areaComunRepository.CreateAsync(areaComun);
             await _unitOfWork.Commit();
             return areaComun.Id;
