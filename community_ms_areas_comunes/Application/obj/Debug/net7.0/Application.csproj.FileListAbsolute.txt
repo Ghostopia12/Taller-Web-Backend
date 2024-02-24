@@ -66,6 +66,7 @@ C:\Users\TACHANKA\Desktop\community_ms_areas_comunes\Application\obj\Debug\net7.
 C:\Users\TACHANKA\Desktop\community_ms_areas_comunes\Application\obj\Debug\net7.0\Application.pdb
 C:\Users\TACHANKA\Desktop\community_ms_areas_comunes\Application\obj\Debug\net7.0\ref\Application.dll
 C:\Users\TACHANKA\Desktop\community_ms_areas_comunes\Application\obj\Debug\net7.0\Applicat.44B5EDA2.Up2Date
+<<<<<<< HEAD
 C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\community_ms_areas_comunes\Application\bin\Debug\net7.0\Application.deps.json
 C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\community_ms_areas_comunes\Application\bin\Debug\net7.0\Application.dll
 C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\community_ms_areas_comunes\Application\bin\Debug\net7.0\Application.pdb
@@ -84,3 +85,5 @@ C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\community_ms_areas
 C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\community_ms_areas_comunes\Application\obj\Debug\net7.0\refint\Application.dll
 C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\community_ms_areas_comunes\Application\obj\Debug\net7.0\Application.pdb
 C:\Users\RINOCERONTE\Downloads\BackendGral\Taller-Web-Backend\community_ms_areas_comunes\Application\obj\Debug\net7.0\ref\Application.dll
+=======
+>>>>>>> e72bb61a1cec8519112c1a38dff08a06972bec1b

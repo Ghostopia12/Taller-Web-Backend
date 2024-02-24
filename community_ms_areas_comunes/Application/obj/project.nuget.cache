@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "7alh/+kU2HV1TjFgmfodh37O8jTSDTufKeSPcQ2zu26AKYsh+SsZtCDZgQWLARpAnNmmnEXUJU1bNU3kmb38zQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\RINOCERONTE\\Downloads\\BackendGral\\Taller-Web-Backend\\community_ms_areas_comunes\\Application\\Application.csproj",
@@ -7,6 +8,15 @@
     "C:\\Users\\RINOCERONTE\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
     "C:\\Users\\RINOCERONTE\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\RINOCERONTE\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+=======
+  "dgSpecHash": "o9zQx5w/MrgSzztAf9MwdrH/9NPWxsRKsxwtIk/6agbvsz9oC0UTJbAqkqyMuiDBYc6FZN4yp8XE7jRK6QOMIA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\TACHANKA\\Desktop\\community_ms_areas_comunes\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TACHANKA\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\TACHANKA\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\TACHANKA\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+>>>>>>> e72bb61a1cec8519112c1a38dff08a06972bec1b
   ],
   "logs": []
 }

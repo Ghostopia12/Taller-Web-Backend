@@ -1,4 +1,6 @@
 ﻿using Application.UseCase.Command.Condominios.CrearCondominio;
+using Application.UseCase.Command.Condominios.EditarCondominio;
+using Application.UseCase.Command.Condominios.EliminarCondominio;
 using Application.UseCase.Query.Condominios;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -43,6 +45,36 @@ namespace Web.Controllers
                 return NotFound();
             }
             return Ok(result);
+        }
+
+        [HttpDelete]
+        public async Task<ActionResult> EliminarCodominio([FromBody] EliminarCondominioCommand command)
+        {
+            try
+            {
+                var resultGuid = await _mediator.Send(command);
+                return Ok(resultGuid);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al eliminar el residente");
+                return BadRequest();
+            }
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> EditarCodominio([FromBody] EditarCondominioCommand command)
+        {
+            try
+            {
+                var resultGuid = await _mediator.Send(command);
+                return Ok(resultGuid);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al editar el residente");
+                return BadRequest();
+            }
         }
     }
 }
