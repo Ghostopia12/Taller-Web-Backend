@@ -1,0 +1,263 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7150/"
+  },
+  "Routes": [
+    ////////////////////  AREA COMUN  ////////////////////
+    {
+      "UpstreamPathTemplate": "/api/areaComun/",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/areaComun/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "ListAreasComunes",
+      "EnableCORS": true,
+      "RouteClaimsRequirement": {}
+    },
+    {
+      "UpstreamPathTemplate": "/api/areaComun/",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamPathTemplate": "/api/areaComun/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "InsertAreasComunes",
+      "EnableCORS": true,
+      "RouteClaimsRequirement": {}
+    },
+    {
+      "UpstreamPathTemplate": "/api/areaComun/",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamPathTemplate": "/api/areaComun/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "EditarAreasComunes",
+      "EnableCORS": true,
+      "RouteClaimsRequirement": {}
+    },
+    {
+      "UpstreamPathTemplate": "/api/areaComun/",
+      "UpstreamHttpMethod": [ "PATCH" ],
+      "DownstreamPathTemplate": "/api/areaComun/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "InhabilitarAreasComunes",
+      "EnableCORS": true,
+      "RouteClaimsRequirement": {}
+    },
+    ////////////////// TURNOS ///////////////////////////
+    {
+      "UpstreamPathTemplate": "/api/turno/",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/turno/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "ListTurnos",
+      "EnableCORS": true,
+      "RouteClaimsRequirement": {}
+    },
+    {
+      "UpstreamPathTemplate": "/api/turno/",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamPathTemplate": "/api/turno/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "InsertTurnos",
+      "EnableCORS": true,
+      "RouteClaimsRequirement": {}
+    },
+
+    //////////////////////  RESERVA  ////////////////////
+    {
+      "UpstreamPathTemplate": "/api/reserva/",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/reserva/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "ListReservas"
+    },
+    {
+      "UpstreamPathTemplate": "/api/reserva/",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamPathTemplate": "/api/reserva/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "InsertReserva"
+    },
+    {
+      "UpstreamPathTemplate": "/api/reserva/",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamPathTemplate": "/api/reserva/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "UpdateReserva"
+    },
+    {
+      "UpstreamPathTemplate": "/api/reserva/",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "DownstreamPathTemplate": "/api/reserva/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "DeleteReserva"
+    },
+    {
+      "UpstreamPathTemplate": "/api/reserva/{userId}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/reserva/{userId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "MiReserva"
+    },
+    ////////////// RESIDENTE //////////////////////////
+    {
+      "UpstreamPathTemplate": "/api/residente/",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamPathTemplate": "/api/residente/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "InsertResidente"
+    },
+    {
+      "UpstreamPathTemplate": "/api/residente/{nombre}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/residente/{nombre}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "obtenerResidente"
+    },
+    {
+      "UpstreamPathTemplate": "/api/reserva/aceptar",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamPathTemplate": "/api/reserva/aceptar",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "aceptarReserva"
+    },
+    {
+      "UpstreamPathTemplate": "/api/reserva/espera",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamPathTemplate": "/api/reserva/espera",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "esperaReserva"
+    },
+
+    //////////////////////  LOGIN  ////////////////////
+    //{
+    //  "UpstreamPathTemplate": "/api/security/login",
+    //  "UpstreamHttpMethod": [ "POST" ],
+    //  "DownstreamPathTemplate": "/api/security/login",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7293
+    //    }
+    //  ],
+    //  "Key": "Login"
+    //},
+    //////////////////////  REGISTER  ////////////////////
+    //{
+    //  "UpstreamPathTemplate": "/api/security/register",
+    //  "UpstreamHttpMethod": [ "POST" ],
+    //  "DownstreamPathTemplate": "/api/security/register",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7293
+    //    }
+    //  ],
+    //  "Key": "Register"
+    //}
+    {
+      "UpstreamPathTemplate": "/api/condominio/",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/condominio/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7209
+        }
+      ],
+      "Key": "ListCondominios",
+      "EnableCORS": true,
+      "RouteClaimsRequirement": {}
+    }
+  ]
+}

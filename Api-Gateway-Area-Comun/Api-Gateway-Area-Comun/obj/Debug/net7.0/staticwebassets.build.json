@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "GhnQTubIpwHzB0IDSBQX+omjhu4U6417OgBdwcbpnao=",
+  "Source": "Api-Gateway-Area-Comun",
+  "BasePath": "_content/Api-Gateway-Area-Comun",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
