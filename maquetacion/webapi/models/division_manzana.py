@@ -4,6 +4,7 @@ from webapi.models import TipoCondominio, TipoDivision, Condominio
 
 
 class DivisionManzana(models.Model):
+
     cantidad_lotes = models.IntegerField()
 
     # Foreign Keys

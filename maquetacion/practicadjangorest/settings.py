@@ -127,6 +127,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://wandering-nut.surge.sh",
     "http://localhost:8080",
     "http://localhost:5173",
+    "http://localhost:5174",
+
 
 ]
 REST_FRAMEWORK = {

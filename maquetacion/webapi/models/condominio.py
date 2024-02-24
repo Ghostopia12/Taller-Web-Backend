@@ -5,6 +5,8 @@ from webapi.models import TipoCondominio, TipoDivision
 
 class Condominio(models.Model):
     nombre = models.CharField(max_length=50)
+    activo = models.BooleanField(default=False)
+    creador = models.IntegerField()
 
     # Foreign Keys
     tipoCondominioId = models.ForeignKey(

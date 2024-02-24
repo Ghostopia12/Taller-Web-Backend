@@ -5,7 +5,8 @@ from webapi.models import TipoCondominio, TipoDivision, DivisionManzana, Piso
 
 class Inmueble(models.Model):
     nombre = models.CharField(max_length=50)
-
+    activo = models.BooleanField(default=False)
+    superficie = models.IntegerField(default=False)
 
     # Foreign Keys
 
