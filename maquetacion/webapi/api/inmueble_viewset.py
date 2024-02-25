@@ -19,7 +19,7 @@ class InmuebleViewSet(viewsets.ModelViewSet):
     serializer_class = InmuebleSerializer
     queryset = Inmueble.objects.all()
 
-    @action(detail=True, methods=['post'], url_path="residencia-usuario",
+    @action(detail=True, methods=['get'], url_path="residencia-usuario",
             name="Lista de recidencias por usuario")
     def reciencia_x_usuario(self, request, pk=None):
         if pk is None:
